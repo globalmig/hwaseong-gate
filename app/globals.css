@@ -1,26 +1,297 @@
-@import "tailwindcss";
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+    font-family: 'SB_M';
+    src: url('/fonts/SB 어그로 M.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+    font-family: 'SB_L';
+    src: url('/fonts/SB 어그로 L.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    word-break: keep-all;
+    outline: 1px solid silver;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+    height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+p,
+li {
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+input {
+    border: 0px;
+    background-color: transparent;
+}
+
+img {
+    display: block;
+    margin: auto 0;
+}
+
+button {
+    border: 0px solid;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-flex-flow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-left {
+    display: flex;
+    justify-content: left;
+}
+
+.pc,
+.pc-flex {
+    display: none;
+}
+
+.black-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: black;
+    opacity: 0.7;
+    overflow: hidden;
+}
+
+article>div {
+    padding: 80px 5%;
+}
+
+/* header */
+
+header {
+    position: relative;
+}
+
+header>div {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    padding: 15px 5%;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+header>div>:first-child>:last-child {
+    margin: auto 0;
+    cursor: pointer;
+}
+
+/* nav */
+
+nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: white;
+    width: 70%;
+    height: 100vh;
+    z-index: 50;
+    transition: 0.5s;
+    padding: 15px 5%;
+}
+
+.nav-open {
+    right: 0;
+}
+
+nav>:first-child {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 30px;
+}
+
+nav>:first-child img {
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
+nav>ul {
+    padding: 0 20px;
+}
+
+nav>ul>li>div {
+    cursor: pointer;
+}
+
+nav>ul>li>div>p {
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav>ul>li>div>p:hover {
+    color: blue;
+}
+
+nav>ul>li>div>div {
+    margin: auto 0;
+}
+
+nav>ul>li>div>div img {
+    width: 15px;
+    height: auto;
+}
+
+nav>ul>li>ul {
+    margin: 20px 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition:0.8s;
+}
+
+nav>ul>li>ul.sub-open {
+    max-height: 750px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav>ul>li>ul>li {
+    margin: 8px 0;
+}
+
+nav>ul>li>ul>li a:hover {
+    color: blue
+}
+
+.sub {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: all 0.8s ease
+}
+
+/* footer */
+
+footer {
+    background-color: #222;
+    color: #ccc;
+    position: relative;
+}
+
+footer>div {
+    padding: 50px 5% 80px;
+}
+
+footer>div>:first-child {
+    position: fixed;
+    right: 5%;
+    bottom: 70px;
+}
+
+footer>div>:first-child img {
+    cursor: pointer;
+    width: 50px;
+    height: auto;
+}
+
+footer>div>:last-child ul {
+    margin: 15px 0 30px;
+}
+
+footer>div>:last-child ul li {
+    margin: 5px 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    p,
+    li {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+
+    .pc-flex {
+        display: flex;
+        pointer-events: auto;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    .mo {
+        display: none;
+    }
+
+    li,
+    p {
+        font-size: 1.2rem;
+    }
+
+    article>div {
+        padding: 150px 0px;
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* header */
+
+    /* footer */
+
 }
