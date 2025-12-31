@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /inquire/write
+
+User-agent: Yeti
+Disallow: /inquire/write
+
+Sitemap: https://www..com//sitemap.xml

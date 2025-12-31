@@ -11,30 +11,32 @@ export default function Header() {
     const [openSub, setOpenSub] = useState<string | null>(null);
     // ishover : 피시메뉴 호버
     const [isHover, setIsHover] = useState<string | null>(null);
-
+    const [isActive, setIsActive] = useState<string | null>(null);
+    
     return (
             <header>
                 <div>
 
                     <div className="display-flex">
-                        <h2>
-                            <Link href="/">화성게이트</Link>
-                        </h2>
                         <div>
-                            <div className="pc">
+                            <Link href="/">
+                            <Image src="/icons/logo.png" alt="홈으로 이동" width={1536} height={1024}/>
+                            </Link>
+                        </div>
+                        <div>
+                            <div className={`pc ${isHover ? "hover" : ""}`}>
                                 <ul className="display-flex">
                                     {Object.entries(CATEGORY_MAP).map(([key, c]) =>
-                                        <li key={key} onMouseEnter={() => setIsHover(key)}>{c.title}</li>
+                                        <li key={key} className={isActive === key ? "active" : ""} onMouseEnter={() => {setIsHover(key); setIsActive(key)}}>{c.title}</li>
                                     )}
                                 </ul>
-                                <div className={isHover ? "hover" : ""}>
-                                    <div className="display-flex">
+                                <div>
+                                    <div className="display-flex" onMouseLeave={()=> {setIsHover(null); setIsActive(null)}}>
                                         {Object.entries(CATEGORY_MAP).map(([key, c]) =>
                                             <ul key={key}>
                                                 {c.categories.map(c =>
-                                                    <li>
-                                                        <Link href={`/${key}/${c.url}`}
-                                                            onClick={() => setIsHover(null)}>
+                                                    <li key={c.name}>
+                                                        <Link href={`/${key}/${c.url}`}>
                                                             {c.name}
                                                         </Link>
                                                     </li>
@@ -48,7 +50,10 @@ export default function Header() {
                             </div>
                             <nav className={isOpen ? "nav-open" : ""}>
                                 <div onClick={() => setIsOpen(false)}>
-                                    <Image src="/icons/close.png" alt="메뉴 닫기" width={38} height={38} />
+                                    <h2 className="pc">화성게이트</h2>
+                                    <div>
+                                        <Image src="/icons/close.png" alt="메뉴 닫기" width={38} height={38} />
+                                    </div>
                                 </div>
                                 <ul>
                                     {Object.entries(CATEGORY_MAP).map(([key, c]) => (
@@ -56,7 +61,7 @@ export default function Header() {
                                             {/* main category */}
                                             <div className="display-flex" onClick={() => setOpenSub(openSub === key ? null : key)}>
                                                 <p>{c.title}</p>
-                                                <div>
+                                                <div className="mo">
                                                     <Image
                                                         src="/icons/arrow_down.png"
                                                         alt="서브메뉴 열기"
