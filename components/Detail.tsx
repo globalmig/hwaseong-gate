@@ -27,31 +27,95 @@ export default function Detail() {
                     </div>
                 </section>
                 <div>
-                    <p>{detail.contents}</p>
+                    {detail.contents.map(c =>
+                        <p key={c}>{c}</p>
+                    )}
+                    <div className="display-flex-flow">
+                        <div>
+                            <Image src={detail.img} alt={detail.name} width={1000} height={1000} />
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <p>시공비</p>
+                                    <p>별도 문의</p>
+                                </li>
+                                <li><p>재매입가</p>
+                                    <p>별도 문의</p>
+                                </li>
+                                <li>
+                                    <p>규격</p>
+                                    <p>{detail.size}</p>
+                                </li>
+                                <li>
+                                    <p>상태</p>
+                                    <p>{detail.construction.state}</p>
+                                </li>
+                                <li>
+                                    <p>기본수량</p>
+                                    <p>{detail.construction.count}</p>
+                                </li>
+                                <li>
+                                    <p>결제조건</p>
+                                    <p>협의</p>
+                                </li>
+                                <li>
+                                    <p>운반·장비</p>
+                                    <p>포함</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <p>임대시공</p>
+                                    <p>별도 문의</p>
+                                </li>
+                                <li>
+                                    <p>임대일</p>
+                                    <p>{detail.rental.date}</p>
+                                </li>
+                                <li>
+                                    <p>보증금</p>
+                                    <p>협의</p>
+                                </li>
+                                <li>
+                                    <p>상태</p>
+                                    <p>{detail.rental.state}</p>
+                                </li>
+                                <li>
+                                    <p>기본수량</p>
+                                    <p>{detail.rental.count}</p>
+                                </li>
+                                <li>
+                                    <p>결제조건</p>
+                                    <p>협의</p>
+                                </li>
+                                <li>
+                                    <p>운반·장비</p>
+                                    <p>포함</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <section>
+                    <div>
+                        <p>보행자 출입문 설치</p>
+                    </div>
+                </section>
+                <div className="display-flex-flow">
                     <div className="display-flex">
                         <div>
-                            <Image src={detail.img} alt={detail.name} width={600} height={400} />
+                            <Image src="/images/보행자출입문_1.jpg" alt="보행자 출입문" width={1000} height={1000} />
                         </div>
                         <div>
-                            <ul>
-                                <li><span>시공비</span>별도 문의</li>
-                                <li><span>재매입가</span>별도 문의</li>
-                                <li><span>규격</span>{detail.size}</li>
-                                <li><span>상태</span>{detail.construction.state}</li>
-                                <li><span>기본수량</span>{detail.construction.count}</li>
-                                <li><span>결제조건</span>협의</li>
-                                <li><span>운반·장비</span>포함</li>
-                            </ul>
-                            <ul>
-                                <li><span>임대시공</span>별도 문의</li>
-                                <li><span>임대일</span>{detail.rental.date}</li>
-                                <li><span>보증금</span>협의</li>
-                                <li><span>상태</span>{detail.rental.state}</li>
-                                <li><span>기본수량</span>{detail.rental.count}</li>
-                                <li><span>결제조건</span>협의</li>
-                                <li><span>운반·장비</span>포함</li>
-                            </ul>
+                            <Image src="/images/보행자출입문_2.jpg" alt="보행자 출입문" width={1000} height={1000} />
                         </div>
+                    </div>
+                    <div>
+                        <h4>쪽문 2M*1M 설치</h4>
+                        <p>현장의 작업자, 협력사, 방문 객 등이 안전하게 출입할 수 있도록 별도로 쪽문을 설치해드립니다.</p>
                     </div>
                 </div>
             </div>
@@ -63,10 +127,22 @@ export default function Detail() {
                 </section>
                 <div>
                     <ul>
-                        <li><span>재매입가</span>별도 문의</li>
-                        <li><span>길이</span>{detail.size}</li>
-                        <li><span>높이</span>{detail.size}</li>
-                        <li><span>지역</span>전국</li>
+                        <li>
+                            <p>재매입가</p>
+                            별도 문의
+                        </li>
+                        <li>
+                            <p>길이</p>
+                            <p>{detail.width}</p>
+                        </li>
+                        <li>
+                            <p>높이</p>
+                            <p>{detail.height}</p>
+                        </li>
+                        <li>
+                            <p>지역</p>
+                            <p>전국</p>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -77,14 +153,14 @@ export default function Detail() {
                     </div>
                 </section>
                 <div>
-                    {detail.detail.map(d=>
+                    {detail.detail.map(d =>
                         <section key={d.id}>
-                            <h3>{d.name}</h3>
+                            <h4>{d.name}</h4>
                             <div className="display-flex-flow">
                                 {d.img.map(i =>
-                                    <div>
-                                    <Image src={i} alt={d.name} width={300} height={300}/>
-                                </div>
+                                    <div key={i} className={d.img.length <= 1 ? "full" : ""}>
+                                        <Image src={i} alt={d.name} width={1000} height={1000} />
+                                    </div>
                                 )}
                             </div>
                         </section>

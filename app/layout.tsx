@@ -8,19 +8,19 @@ import Footer from "@/components/Footer";
 import Cs from "@/components/Cs";
 
 export const metadata: Metadata = {
-  title: '화성게이트',
+  title: '(주)화성게이트',
   description: '',
   openGraph: {
-    title: '화성게이트',
+    title: '(주)화성게이트',
     description: '',
     url: 'https://www..com',
-    siteName: '화성게이트',
+    siteName: '(주)화성게이트',
     images: [
       {
         url: 'https://www..com/images/og_image.png',
         width: 1200,
         height: 630,
-        alt: '화성게이트',
+        alt: '(주)화성게이트',
       },
     ],
     locale: 'ko_KR',

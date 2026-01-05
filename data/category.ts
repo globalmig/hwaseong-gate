@@ -14,6 +14,13 @@ export const CATEGORY_MAP: { [key: string]: { title: string; banner: string; cat
             { name: "양개도어", url: "B", },
         ],
     },
+    processing: {
+        title: '홀딩도어 수리·보험처리',
+        banner: "/images/processing_banner.jpg",
+        categories: [
+            { name: "홀딩도어 수리·보험처리", url: "repair_insurance", },
+        ],
+    },
     // production: {
     //     title: '생산부문',
     //     banner: "/images/production_banner.jpg",

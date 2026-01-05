@@ -38,8 +38,8 @@ export default function MainSlide() {
                     <Image src="/images/banner_1.jpg" alt="배너1" width={2560} height={700} priority quality={100} />
                 </div>
                 <section>
-                    <h1>홀딩도어</h1>
-                    <p>현장 구조에 맞춰 제작·설치하는 대형 산업용 접이식 도어입니다.</p>
+                    <h1>현장출입문</h1>
+                    <p>현장 구조에 맞춰 홀딩도어와 양개도어, 쪽문등을 제작·설치해드립니다.</p>
                     <button>
                         <Link href="/business/A">자세히 보기</Link>
                     </button>
@@ -50,8 +50,8 @@ export default function MainSlide() {
                     <Image src="/images/banner_1.jpg" alt="배너1" width={2560} height={700} priority quality={100} />
                 </div>
                 <section>
-                    <h1>양개도어</h1>
-                    <p>건설현장 출입구에 설치되는 실용적인 양방향 개폐 도어입니다.</p>
+                    <h1>홀딩도어 수리 및 보험처리</h1>
+                    <p></p>
                     <button>
                         <Link href="/business/B">자세히 보기</Link>
                     </button>

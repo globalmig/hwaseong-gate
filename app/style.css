@@ -46,21 +46,43 @@
 .home-main>:last-child>section {
     padding: 20px;
     color: white;
+    transition: 0.5s;
+}
+
+.home-main>:last-child>section>div>div {
+    margin: auto 0;
+}
+
+.home-main>:last-child>section img {
+    width: 8px;
+    height: auto;
+}
+
+.home-main>:last-child>section h3 a {
+    color: white;
 }
 
 .home-main>:last-child>section:first-of-type {
-    background-color: #222;
+    background-color: #880000;
+}
+
+.home-main>:last-child>section:first-of-type:hover {
+    background-color: #770000;
 }
 
 .home-main>:last-child>section:last-of-type {
-    background-color: #ccc;
+    background-color: #555;
+}
+
+.home-main>:last-child>section:last-of-type:hover {
+    background-color: #222;
 }
 
 .home-main>:last-child>section>p {
     margin: 8px 0 15px;
 }
 
-.home-business>div>:last-child section{
+.home-business>div>:last-child section {
     width: 100%;
     position: relative;
     margin: 10px 0;
@@ -68,16 +90,25 @@
     color: white;
 }
 
+.home-business>div>:last-child section>:first-child {
+    overflow: hidden;
+}
+
 .home-business>div>:last-child section img {
     width: 100%;
     height: auto;
+    transition: 0.5s;
+}
+
+.home-business>div>:last-child section>:first-child img.section-hover {
+    scale: 1.2;
 }
 
 .home-business>div>:last-child section>:last-child {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 80%;
 }
 
@@ -85,6 +116,11 @@
     padding: 8px 0;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+    transition: 0.8s;
+}
+
+.home-business>div>:last-child section>:last-child>div.section-hover {
+    padding: 15px 0;
 }
 
 .home-business>div>:last-child section>:last-child>div>p:first-of-type {
@@ -93,15 +129,28 @@
 }
 
 .home-business>div>:last-child section>:last-child>div>p:last-of-type {
-    display: none;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
 }
 
-.home-business>div>:last-child section>:last-child> button {
+.home-business>div>:last-child section>:last-child>div>p:last-of-type.section-hover {
+    opacity: 1;
+    height: auto;
+    margin-top: 10px;
+}
+
+.home-business>div>:last-child section>:last-child>button {
     margin-top: 20px;
 }
 
-.home-business>div>:last-child section>:last-child> button a {
+.home-business>div>:last-child section>:last-child>button a {
     color: white;
+}
+
+.home-business>div>:last-child section>:last-child>button a:hover {
+    font-weight: bold;
 }
 
 .cs {
@@ -118,12 +167,12 @@
     color: white;
 }
 
-.cs>div>p {
-    margin: 10px 0 30px;
+.cs>div>h1 {
+    margin-top: 10px;
 }
 
-.cs>div>h1 {
-    margin-bottom: 10px;
+.cs>div>h3 {
+    margin-top: 15px;
 }
 
 /* company */
@@ -133,30 +182,294 @@
 }
 
 .company>div>:first-child {
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 .company>div>div>img {
     width: 100px;
     height: auto;
     margin: 0 auto 10px;
+    filter: brightness(0.8);
+}
+
+.company>div h3 {
+    margin: 10px auto 30px;
 }
 
 .company>div>ul {
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #eee;
 }
 
 .company>div>ul li {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
-.company>div>ul li:first-of-type {
+/* business */
+
+.business>div>:first-child p {
+    margin-top: 0;
+}
+
+.business>div>div {
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.business>div>div>section {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #880000;
+}
+
+.business>div>div>section>div {
+    padding: 10px 20px;
+    background-color: #880000;
+    color: white;
+    display: inline-block;
+}
+
+.business>div>:first-child>div>p {
+    margin-bottom: 8px;
+}
+
+.business>div>:first-child>div>p:last-of-type {
     margin-bottom: 30px;
+}
+
+.business>div>:first-child>div>div>:first-child {
+    width: 100%;
+}
+
+.business>div>:first-child>div>div img {
+    width: 100%;
+    height: auto;
+}
+
+.business>div>:first-child>div>div>:last-child {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.business>div>:first-child>div>div>:last-child ul:first-of-type {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 20px;
+}
+
+.business>div>:first-child>div>div>:last-child ul li {
+    padding: 5px 0;
+    display: flex;
+}
+
+.business>div>:first-child>div>div>:last-child ul li p {
+    width: 55%;
+}
+
+.business>div>:first-child>div>div>:last-child ul li p:first-of-type {
+    font-weight: bold;
+    width: 35%;
+}
+
+.business>div>:first-child>div>div>:last-child ul li:first-of-type p:last-of-type {
+    color: #880000;
+    font-weight: bold;
+}
+
+.business>div>:nth-child(2)>div>div>div {
+    width: 48%;
+}
+
+.business>div>:nth-child(2)>div>div img {
+    width: 100%;
+    height: auto;
+}
+
+.business>div>:nth-child(2)>div>div h4 {
+    margin: 20px 0 8px;
+}
+
+.business>div>:nth-child(3)>div>ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+.business>div>:nth-child(3)>div>ul li:first-of-type {
+    padding: 0 0 10px;
+}
+
+.business>div>:nth-child(3)>div>ul li p {
+    width: 55%;
+}
+
+.business>div>:nth-child(3)>div>ul li p:first-of-type {
+    font-weight: bold;
+    width: 35%;
+}
+
+.business>div>:last-child>div>section h4 {
+    position: relative;
+    padding-left: 20px;
+    margin: 25px 0 10px;
+}
+
+.business>div>:last-child>div>section h4::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #222;
+}
+
+.business>div>:last-child>div>section>div>div {
+    width: 48%;
+    margin-bottom: 18px;
+}
+
+.business>div>:last-child>div>section>div>div.full {
+    width: 100%;
+}
+
+.business>div>:last-child>div>section>div>div>img {
+    width: 100%;
+    height: auto;
+}
+
+/* processing */
+
+.processing>div>:first-child {
+    text-align: left;
+}
+
+.processing>div>:first-child p {
+    margin-top: 0;
+}
+
+.processing>div>section {
+    margin-bottom: 50px;
+}
+
+.processing>div>section:last-of-type {
+    margin-bottom: 0;
+}
+
+.processing>div>section>:first-child {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #880000;
+}
+
+.processing>div>section>:first-child>div {
+    padding: 10px 20px;
+    background-color: #880000;
+    color: white;
+    display: inline-block;
+}
+
+.processing>div>section>:last-child>div {
+    width: 48%;
+    margin-bottom: 18px;
+}
+
+.processing>div>section>:last-child>div>img {
+    width: 100%;
+    height: auto;
+}
+
+/* inquire */
+
+.inquire>div>:first-child {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.inquire>div>form {
+    text-align: left;
+}
+
+.inquire>div>form>div {
+    margin-bottom: 30px;
+}
+
+.inquire>div>form h3 {
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-bottom: 0px;
+    color: #222;
+}
+
+.inquire>div>form input,
+.inquire>div>form textarea {
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid #ccc
+}
+
+.inquire>div>form>div:last-of-type>:nth-child(2) {
+    padding: 15px 10px;
+    border: 1px solid #ccc;
+}
+
+.inquire>div>form>div:last-of-type>:nth-child(2) ul {
+    margin: 15px 0;
+}
+
+.inquire>div>form>div:last-of-type>:last-child {
+    margin-top: 20px;
+    justify-content: left;
+    gap: 10px;
+}
+
+.inquire>div>form>div:last-of-type>:last-child input {
+    width: 15px;
+    height: 15px;
+    margin: auto 0;
+}
+
+.inquire>div>form>div:last-of-type>:last-child label {
+    display: none;
+}
+
+.inquire>div>form>div:last-of-type>:last-child p {
+    margin: auto 0;
+}
+
+.inquire>div>form>div:last-of-type p span {
+    font-weight: bold;
+}
+
+.inquire>div>form button {
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: #880000;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.inquire>div>form button:hover {
+    background-color: #770000;
 }
 
 @media screen and (min-width: 768px) {
 
     /* main */
+
+    .main-slider {
+        height: 600px;
+    }
+
+    .main-slider .main-slider-item>div img {
+        height: 600px;
+    }
+
     .main-slider .main-slider-item section h1 {
         font-size: 2.5rem;
     }
@@ -173,10 +486,15 @@
         width: 100%;
     }
 
+    .home-business>div>:last-child section {
+        width: 32%;
+        margin: 10px 0;
+    }
+
+    /* cs */
+
     .cs>div {
-        width: 1200px;
-        margin: 0 auto;
-        padding: 70px 0;
+        padding: 70px 5%;
     }
 
     .cs>div>h3 {
@@ -185,6 +503,51 @@
 
     .cs>div>h1 {
         font-size: 3rem;
+    }
+
+    /* company */
+
+    .company>div>:first-child {
+        margin-bottom: 0px;
+    }
+
+    .company>div>div>img {
+        width: 150px;
+    }
+
+    .company>div h2 {
+        font-size: 2rem;
+    }
+
+    .company>div h3 {
+        width: 55%;
+    }
+
+    .company>div>ul {
+        margin-top: 50px;
+    }
+
+    .company>div>ul li {
+        width: 70%;
+        margin: 5px auto;
+        font-size: 1.2rem;
+    }
+
+    /* inquire */
+
+    .inquire>div>form input,
+    .inquire>div>form textarea {
+        font-size: 1rem;
+    }
+
+    .inquire>div>form button {
+        margin-top: 40px;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .inquire>div>form button:hover {
+        background-color: #770000;
     }
 
 }
@@ -208,6 +571,186 @@
     }
 
     .home-main>:last-child>section {
-        padding: 30px 50px;
+        padding: 50px 30px;
     }
+
+    /* cs */
+
+    .cs>div {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+
+    .cs>div>h3:first-of-type {
+        font-size: 2.3rem;
+    }
+
+    .cs>div>h1 {
+        font-size: 3.5rem;
+    }
+
+    /* company */
+    .company>div>div>img {
+        width: 150px;
+    }
+
+    .company>div h2 {
+        font-size: 2.5rem;
+    }
+
+    .company>div h3 {
+        font-size: 1.5rem;
+    }
+
+    .company>div>ul {
+        padding: 40px 0;
+    }
+
+    .company>div>ul li {
+        width: 100%;
+    }
+
+    /* business */
+
+    .business>div>div {
+        margin-bottom: 100px;
+    }
+
+    .business>div>div>section {
+        margin-bottom: 40px;
+    }
+
+    .business>div>div>section>div {
+        padding: 10px 25px;
+    }
+
+    .business>div>div>section>div p {
+        font-size: 1.2rem;
+    }
+
+    .business>div>:first-child>div>p:last-of-type {
+        margin-bottom: 40px;
+    }
+
+    .business>div>:first-child>div>div>:first-child {
+        width: 500px;
+        margin: auto 0;
+    }
+
+    .business>div>:first-child>div>div>:last-child {
+        margin-top: 0px;
+        margin: auto 0;
+        width: 560px;
+    }
+
+    .business>div>:first-child>div>div>:last-child ul:first-of-type {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #aaa;
+        margin-bottom: 20px;
+    }
+
+    .business>div>:first-child>div>div>:last-child ul li {
+        padding: 5px 0;
+        display: flex;
+    }
+
+    .business>div>:first-child>div>div>:last-child ul li p {
+        width: 100%;
+    }
+
+    .business>div>:first-child>div>div>:last-child ul li:first-of-type p:last-of-type {
+        font-size: 1.2rem;
+    }
+
+    .business>div>:nth-child(2)>div>:first-child {
+        gap: 20px;
+        justify-content: left;
+    }
+
+    .business>div>:nth-child(2)>div>div>div{
+        width: 250px;
+    }
+
+    .business>div>:nth-child(2)>div>div h4 {
+        font-size: 1.2rem;
+        margin: 0 0 8px;
+    }
+
+    .business>div>:nth-child(2)>div>div p {
+        /* font-size: 1rem; */
+        width: 600px;
+    }
+
+    .business>div>:nth-child(3)>div>ul li {
+        padding: 20px 0;
+    }
+
+    .business>div>:nth-child(3)>div>ul li:first-of-type {
+        padding: 0 0 20px;
+        /* font-size: 1.2rem; */
+    }
+
+    .business>div>:nth-child(3)>div>ul li p {
+        width: 100%;
+        /* font-size: 1.2rem; */
+    }
+
+    .business>div>:nth-child(3)>div>ul li p:first-of-type {
+        width: 200px;
+    }
+
+    .business>div>:nth-child(3)>div>ul li p:last-of-type {
+        width: 200px;
+    }
+
+    .business>div>:last-child>div>section {
+        margin-bottom: 50px;
+    }
+
+    .business>div>:last-child>div>section:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .business>div>:last-child>div>section h4 {
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+    }
+
+    .business>div>:last-child>div>section>div {
+        justify-content: left;
+        gap: 25px;
+    }
+
+    .business>div>:last-child>div>section>div>div {
+        width: 281.2px;
+    }
+
+    .business>div>:last-child>div>section>div>div.full {
+        width: 281.2px;
+    }
+
+    /* processing */
+
+    .processing>div>section {
+        margin-bottom: 60px;
+    }
+
+    .processing>div>section>:first-child {
+        margin-bottom: 50px;
+    }
+
+    .processing>div>section>:first-child>div {
+        padding: 10px 20px;
+    }
+
+    .processing>div>section>:first-child>div p {
+        font-size: 1.2rem;
+    }
+
+    .processing>div>section>:last-child>div {
+        width: 281.2px;
+    }
+
+
 }

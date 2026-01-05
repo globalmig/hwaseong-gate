@@ -19,8 +19,11 @@ export default function Header() {
 
                     <div className="display-flex">
                         <div>
-                            <Link href="/">
-                            <Image src="/icons/logo.png" alt="홈으로 이동" width={1536} height={1024}/>
+                            <Link href="/" className="flex-left">
+                            <div>
+                                <Image src="/icons/logo.png" alt="홈으로 이동" width={1536} height={1024}/>
+                            </div>
+                            <h4>(주)화성게이트</h4>
                             </Link>
                         </div>
                         <div>
@@ -41,7 +44,6 @@ export default function Header() {
                                                         </Link>
                                                     </li>
                                                 )
-
                                                 }
                                             </ul>
                                         )}
@@ -77,7 +79,7 @@ export default function Header() {
                                                         <Link href={`/${key}/${sub.url}`} onClick={() => {
                                                             setIsOpen(false); setOpenSub(null);
                                                         }
-                                                        }>{sub.name}</Link>
+                                                        }>- {sub.name}</Link>
                                                     </li>
                                                 ))}
                                             </ul>

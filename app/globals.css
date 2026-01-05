@@ -23,7 +23,7 @@ li {
 a {
     text-decoration: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
     text-transform: uppercase;
     color: black;
 }
@@ -116,15 +116,26 @@ header>div {
     border-bottom: 1px solid #ccc;
 }
 
+header>div>:first-child>:first-child h4 {
+    margin: auto 0;
+    margin-left: 10px;
+}
+
 header>div>:first-child>:first-child img {
-    width: 70px;
+    width: 50px;
     height: auto;
     margin: auto 0;
+    filter: grayscale(1) brightness(0);
 }
 
 header>div>:first-child>:last-child {
     margin: auto 0;
     cursor: pointer;
+}
+
+header>div>:first-child>:last-child img {
+    width: 30px;
+    height: auto;
 }
 
 /* nav */
@@ -152,13 +163,13 @@ nav>:first-child {
 }
 
 nav>:first-child img {
-    width: 25px;
+    width: 20px;
     height: auto;
     cursor: pointer;
 }
 
 nav>ul {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 nav>ul>li>div {
@@ -172,7 +183,7 @@ nav>ul>li>div>p {
 }
 
 nav>ul>li>div>p:hover {
-    color: blue;
+    color: #7B0202;
 }
 
 nav>ul>li>div>div {
@@ -207,7 +218,8 @@ nav>ul>li>ul>li {
 }
 
 nav>ul>li>ul>li a:hover {
-    color: blue
+    color: #7B0202;
+    font-weight: bold;
 }
 
 .sub {
@@ -224,7 +236,7 @@ nav>ul>li>ul>li a:hover {
 /* main */
 
 main {
-    margin-top: 77px;
+    margin-top: 70px;
 }
 
 .category-main {
@@ -254,12 +266,12 @@ main {
     position: absolute;
     bottom: 0;
     right: 0;
-    background-color: #ccc;
+    background-color: #eee;
 }
 
 .category-main>div>:last-child>:first-child {
     padding: 10px;
-    background-color: #222;
+    background-color: #7B0202;
     cursor: pointer;
 }
 
@@ -275,7 +287,12 @@ main {
 }
 
 .category-main>div>:last-child>section:first-of-type {
-    background-color: #aaa;
+    background-color: #222;
+    color: white;
+}
+
+.category-main>div>:last-child>section:first-of-type img {
+    filter: invert(1);
 }
 
 .category-main>div>:last-child>section>h4,
@@ -294,12 +311,13 @@ main {
     left: 0;
     opacity: 0;
     visibility: hidden;
-    top: 45px;
+    top: 44px;
     background-color: white;
     width: 100%;
     text-align: center;
     z-index: 10;
     transition: 0.5s;
+    border: 1px solid #eee;
 }
 
 .category-main>div>:last-child>section>ul.category-open {
@@ -313,11 +331,7 @@ main {
 }
 
 .category-main>div>:last-child>section>ul li:hover {
-    background-color: #222;
-}
-
-.category-main>div>:last-child>section>ul li:hover a {
-    color: white;
+    background-color: #eee;
 }
 
 /* footer */
@@ -373,10 +387,14 @@ footer>div>:last-child ul li {
         font-size: 1rem;
     }
 
+    article>div>:first-child h2 {
+        font-size: 2rem;
+    }
+
     /* main */
 
     main {
-        margin-top: 77px;
+        margin-top: 69px;
     }
 
     .category-main {
@@ -397,6 +415,10 @@ footer>div>:last-child ul li {
 
     .category-main>div>:last-child>:first-child {
         padding: 20px;
+    }
+
+    .category-main>div>:last-child {
+        width: 72%;
     }
 
     .category-main>div>:last-child>section {
@@ -461,6 +483,14 @@ footer>div>:last-child ul li {
         margin: 0 auto;
     }
 
+    header>div>:first-child>:first-child {
+        margin: auto 0;
+    }
+
+    header>div>:first-child>:first-child h4 {
+        font-size: 1.5rem;
+    }
+
     header>div>:first-child>:nth-child(2)>div>ul li {
         padding: 30px;
         cursor: pointer;
@@ -469,13 +499,13 @@ footer>div>:last-child ul li {
     }
 
     header>div>:first-child>:nth-child(2)>div>ul li:hover {
-        border-bottom: 2px solid blue;
-        color: blue;
+        border-bottom: 2px solid #7B0202;
+        color: #7B0202;
     }
 
     header>div>:first-child>:nth-child(2)>div.hover>ul li.active {
-        border-bottom: 2px solid blue;
-        color: blue;
+        border-bottom: 2px solid #7B0202;
+        color: #7B0202;
     }
 
     header>div>:first-child>:nth-child(2)>div>div {
@@ -483,7 +513,7 @@ footer>div>:last-child ul li {
         top: 91px;
         left: 0;
         width: 100%;
-        padding: 20px 0 100px;
+        padding: 20px 0 200px;
         background-color: white;
         display: none;
     }
@@ -492,17 +522,33 @@ footer>div>:last-child ul li {
         display: block;
     }
 
+    header>div>:first-child>:nth-child(2)>div>div>div {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    header>div>:first-child>:nth-child(2)>div>div>div>ul:first-of-type {
+        margin-left: 175px;
+    }
+
     header>div>:first-child>:nth-child(2)>div>div>div>ul li {
-        color: #555
+        color: #555;
+        text-align: center;
+        padding: 8px 30px;
+        width: 130.66px;
     }
 
-    header>div>:first-child>:nth-child(2)>div>div>div>ul li:hover a {
-        color: blue;
-        font-weight: bold;
+    header>div>:first-child>:nth-child(2)>div>div>div>ul:nth-of-type(3) li {
+        width: 252.8px;
     }
 
-    header>div>:first-child>:nth-child(2)>div.hover>div>div>ul li:hover a {
-        color: blue;
+    header>div>:first-child>:nth-child(2)>div>div>div>ul li a {
+        color: #555;
+        white-space: nowrap;
+    }
+
+    header>div>:first-child>:nth-child(2)>div.hover>div>div>ul li a:hover {
+        color: #7B0202;
         font-weight: bold;
     }
 
@@ -531,7 +577,7 @@ footer>div>:last-child ul li {
     }
 
     nav>ul {
-        width: 850px;
+        width: 900px;
         margin: 50px auto 0;
         padding: 0px;
         display: flex;
@@ -540,19 +586,26 @@ footer>div>:last-child ul li {
     }
 
     nav>ul>li {
-        width: 100%;
         height: 500px;
         padding: 0 20px;
+        position: relative;
     }
 
-    nav>ul>li:not(nav>ul>li:last-of-type) {
-        border-right: 1px solid #eee;
+    nav>ul>li:not(nav>ul>li:last-of-type)::after {
+        content: "";
+        width: 1px;
+        height: 500px;
+        position: absolute;
+        background-color: #eee;
+        top: 0;
+        right: -38px;
     }
 
     nav>ul>li>div>p {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: bold;
         transition: 0.3s;
+        white-space: nowrap;
     }
 
     nav>ul>li>div>p:hover {
@@ -607,7 +660,7 @@ footer>div>:last-child ul li {
     }
 
     .category-main>div>:last-child {
-        width: 37%;
+        width: 57%;
     }
 
     .category-main>div>:last-child>:first-child {
@@ -697,6 +750,11 @@ footer>div>:last-child ul li {
         width: 1px;
         height: 10px;
         background-color: #aaa;
+    }
+
+    footer>div>:last-child ul li:nth-last-of-type(2)::after,
+    footer>div>:last-child ul li:last-of-type::after {
+        width: 0;
     }
 
     footer>div>:last-child p {
