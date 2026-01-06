@@ -595,18 +595,12 @@ footer>div>:last-child ul li {
 
     nav>ul>li {
         height: 500px;
-        padding: 0 20px;
-        position: relative;
+        padding: 0 50px;
+        width: 300px;
     }
 
-    nav>ul>li:not(nav>ul>li:last-of-type)::after {
-        content: "";
-        width: 1px;
-        height: 500px;
-        position: absolute;
-        background-color: #eee;
-        top: 0;
-        right: -38px;
+    nav>ul>li:not(nav>ul>li:last-of-type) {
+        border-right: 1px solid #eee;
     }
 
     nav>ul>li>div>p {

@@ -12,6 +12,7 @@ export const CATEGORY_MAP: { [key: string]: { title: string; banner: string; cat
         categories: [
             { name: "홀딩도어", url: "A", },
             { name: "양개도어", url: "B", },
+            { name: "가설 EGI휀스", url: "C", },
         ],
     },
     processing: {
@@ -21,20 +22,11 @@ export const CATEGORY_MAP: { [key: string]: { title: string; banner: string; cat
             { name: "홀딩도어 수리·보험처리", url: "repair_insurance", },
         ],
     },
-    // production: {
-    //     title: '생산부문',
-    //     banner: "/images/production_banner.jpg",
+    // inquire: {
+    //     title: '문의하기',
+    //     banner: "/images/inquire_banner.jpg",
     //     categories: [
-    //         { name: "생산1", url: "production1", },
-    //         { name: "생산2", url: "production2", },
-    //         { name: "생산3", url: "production3", },
+    //         { name: "문의하기", url: "write", },
     //     ],
     // },
-    inquire: {
-        title: '문의하기',
-        banner: "/images/inquire_banner.jpg",
-        categories: [
-            { name: "문의하기", url: "write", },
-        ],
-    },
 };

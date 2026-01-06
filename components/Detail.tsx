@@ -129,14 +129,15 @@ export default function Detail() {
                     <ul>
                         <li>
                             <p>재매입가</p>
-                            별도 문의
+                            <p>별도 문의</p>
                         </li>
                         <li>
-                            <p>길이</p>
+                            <p>{detail.id === 3 ? "EGI휀스 시공규격": "길이"}</p>
                             <p>{detail.width}</p>
                         </li>
                         <li>
-                            <p>높이</p>
+                            <p>{detail.id === 3 ? "분진망 시공규격": "높이"}
+                            </p>
                             <p>{detail.height}</p>
                         </li>
                         <li>

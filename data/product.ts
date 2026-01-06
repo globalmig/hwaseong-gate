@@ -1,26 +1,26 @@
 
-interface DetailProps{
-        id: number,
-        name: string,
-        contents: string[],
-        size: string,
-        width: string,
-        height: string,
-        construction: {
-            state: string,
-            count: string
-        },
-        rental: {
-            date: string,
-            state: string,
-            count: string
-        },
-        img: string,
-        site: string[],
-        detail: {id: number, name: string, img: string[]}[]
+interface DetailProps {
+    id: number,
+    name: string,
+    contents: string[],
+    size: string,
+    width: string,
+    height: string,
+    construction: {
+        state: string,
+        count: string
+    },
+    rental: {
+        date: string,
+        state: string,
+        count: string
+    },
+    img: string,
+    site: string[],
+    detail: { id: number, name: string, img: string[] }[]
 }
 
-export const PRODUCT : DetailProps[] = [
+export const PRODUCT: DetailProps[] = [
     {
         id: 1,
         name: "홀딩도어",
@@ -104,12 +104,47 @@ export const PRODUCT : DetailProps[] = [
                     "/images/양개도어_상세1.jpg",
                     "/images/양개도어_상세2.jpg",
                 ]
-            },{
+            }, {
                 id: 2,
                 name: "양개 쪽문(2M*2M) 설치 작업",
                 img: [
                     "/images/쪽문1.jpg",
                     "/images/쪽문2.jpg",
+                ]
+            },
+        ]
+    }, {
+        id: 3,
+        name: "가설 EGI휀스",
+        contents: [
+            "가설 EGI휀스는 건설 현장이나 공장, 공사 구간 등에서 임시로 설치되는 안전 및 경계용 울타리입니다.",
+            "출입 관리와 안전 확보에 효과적이며, 공사장 주변의 통행자와 작업자를 보호합니다."
+        ],
+        size: "1M~4M",
+        width: "1.8M, 2M, 2.4M, 3M, 4M",
+        height: "1M~2.2M",
+        construction: {
+            state: "신제품",
+            count: "10M 이상",
+        },
+        rental: {
+            date: "1일~48개월",
+            state: "중고품",
+            count: "10M 이상",
+        },
+        img: "/images/휀스_thumnail.jpg",
+        site: [
+            "/images/휀스_현장1.jpg",
+            "/images/휀스_현장1.jpg",
+        ],
+        detail: [
+            {
+                id: 1,
+                name: "가설 EGI휀스 설치 작업",
+                img: [
+                    "/images/휀스_상세1.jpg",
+                    "/images/휀스_상세2.jpg",
+                    "/images/휀스_상세3.jpg",
                 ]
             },
         ]
