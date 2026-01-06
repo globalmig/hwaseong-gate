@@ -1,6 +1,4 @@
 import { NextResponse } from "next/server";
-import fs from "fs/promises";
-import path from "path";
 import { SolapiMessageService } from "solapi";
 
 export async function POST(req: Request) {
@@ -33,8 +31,6 @@ export async function POST(req: Request) {
             text: message,
             subject: "[문의 접수]",
         });
-
-        console.log(message);
 
         return NextResponse.json({ success: true, sendResult });
 

@@ -29,7 +29,7 @@ export default function Footer() {
                             <li>팩스 : 0508-908-9464</li>
                             <li>주소 : 경기도 화성시 송산면 삼존리 655-1</li>
                         </ul>
-                        <p>@2026 화성게이트. All rights reserved.</p>
+                        <p>@2026 (주)화성게이트. All rights reserved.</p>
                     </div>
                 </div>
             </div>

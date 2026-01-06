@@ -276,16 +276,20 @@
     font-weight: bold;
 }
 
-.business>div>:nth-child(2)>div>div>div {
+.business>div>:nth-child(2)>div>:last-child {
+    margin-top: 30px;
+}
+
+.business>div>:nth-child(2)>div>:last-child>div {
     width: 48%;
 }
 
-.business>div>:nth-child(2)>div>div img {
+.business>div>:nth-child(2)>div>:last-child>div img {
     width: 100%;
     height: auto;
 }
 
-.business>div>:nth-child(2)>div>div h4 {
+.business>div>:nth-child(2)>div>:first-child>h4 {
     margin: 20px 0 8px;
 }
 
@@ -471,11 +475,15 @@
     }
 
     .main-slider .main-slider-item section h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .main-slider .main-slider-item section button {
         padding: 10px 35px;
+    }
+
+    .main-slider .main-slider-item section button a {
+        font-size: 1rem;
     }
 
     .home-main>:last-child {
@@ -520,7 +528,8 @@
     }
 
     .company>div h3 {
-        width: 55%;
+        width: 78%;
+        font-size: 1.5rem;
     }
 
     .company>div>ul {
@@ -530,7 +539,6 @@
     .company>div>ul li {
         width: 70%;
         margin: 5px auto;
-        font-size: 1.2rem;
     }
 
     /* inquire */
@@ -599,8 +607,8 @@
         font-size: 2.5rem;
     }
 
-    .company>div h3 {
-        font-size: 1.5rem;
+    .company>div h3{
+        width: 55%;
     }
 
     .company>div>ul {
@@ -609,6 +617,7 @@
 
     .company>div>ul li {
         width: 100%;
+        font-size: 1.2rem;
     }
 
     /* business */
@@ -626,11 +635,15 @@
     }
 
     .business>div>div>section>div p {
+        font-size: 1.3rem;
+    }
+
+    .business>div>:first-child>div>p {
         font-size: 1.2rem;
     }
 
     .business>div>:first-child>div>p:last-of-type {
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
 
     .business>div>:first-child>div>div>:first-child {
@@ -663,37 +676,36 @@
         font-size: 1.2rem;
     }
 
-    .business>div>:nth-child(2)>div>:first-child {
-        gap: 20px;
+    .business>div>:nth-child(2)>div p {
+        font-size: 1.2rem;
+    }
+
+    .business>div>:nth-child(2)>div>:last-child {
+        gap: 25px;
         justify-content: left;
     }
 
-    .business>div>:nth-child(2)>div>div>div{
-        width: 250px;
+    .business>div>:nth-child(2)>div>:last-child>div {
+        width: 281.2px;
     }
 
-    .business>div>:nth-child(2)>div>div h4 {
+    .business>div>:nth-child(2)>div>:first-child>h4 {
         font-size: 1.2rem;
         margin: 0 0 8px;
     }
-
-    .business>div>:nth-child(2)>div>div p {
-        /* font-size: 1rem; */
-        width: 600px;
-    }
-
+    
     .business>div>:nth-child(3)>div>ul li {
-        padding: 20px 0;
+        padding: 30px 0;
     }
 
     .business>div>:nth-child(3)>div>ul li:first-of-type {
-        padding: 0 0 20px;
-        /* font-size: 1.2rem; */
+        padding: 0 0 30px;
+        font-size: 1.2rem;
     }
 
     .business>div>:nth-child(3)>div>ul li p {
         width: 100%;
-        /* font-size: 1.2rem; */
+        font-size: 1.2rem;
     }
 
     .business>div>:nth-child(3)>div>ul li p:first-of-type {
@@ -719,7 +731,7 @@
 
     .business>div>:last-child>div>section>div {
         justify-content: left;
-        gap: 25px;
+        gap: 10px 25px;
     }
 
     .business>div>:last-child>div>section>div>div {
@@ -750,6 +762,7 @@
 
     .processing>div>section>:last-child>div {
         width: 281.2px;
+        margin-bottom: 25px;
     }
 
 

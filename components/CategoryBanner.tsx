@@ -21,10 +21,10 @@ export default function CategoryBanner() {
     const [mainToggle, setMainToggle] = useState<Boolean>(false);
     const [subToggle, setSubToggle] = useState<Boolean>(false);
 
-    useEffect(()=> {
+    useEffect(() => {
         setMainToggle(false);
         setSubToggle(false);
-    },[pathname])
+    }, [pathname])
 
     return (
         <main className="category-main">
@@ -47,22 +47,22 @@ export default function CategoryBanner() {
                     <section className="display-flex">
                         <h4>{category.title}</h4>
                         <div>
-                            <Image src="/icons/arrow_down.png" alt="카테고리 선택" onClick={()=> {setMainToggle(!mainToggle);setSubToggle(false)}} width={33} height={16} />
+                            <Image src="/icons/arrow_down.png" alt="카테고리 선택" onClick={() => { setMainToggle(!mainToggle); setSubToggle(false) }} width={33} height={16} />
                         </div>
                         <ul className={mainToggle ? "category-open" : ""}>
                             {Object.entries(CATEGORY_MAP).map(([key, c]) =>
-                                <li key={key}><Link href={`/${key}/${c.categories[0].url}`} onClick={()=> setMainToggle(false)}>{c.title}</Link></li>
+                                <li key={key}><Link href={`/${key}/${c.categories[0].url}`} onClick={() => setMainToggle(false)}>{c.title}</Link></li>
                             )}
                         </ul>
                     </section>
                     <section className="display-flex">
                         <h4>{subcategoryName}</h4>
                         <div>
-                            <Image src="/icons/arrow_down.png" alt="카테고리 선택" onClick={()=> {setSubToggle(!subToggle); setMainToggle(false);}} width={33} height={16} />
+                            <Image src="/icons/arrow_down.png" alt="카테고리 선택" onClick={() => { setSubToggle(!subToggle); setMainToggle(false); }} width={33} height={16} />
                         </div>
                         <ul className={subToggle ? "category-open" : ""}>
                             {category.categories.map(sub =>
-                                <li key={sub.name}><Link href={`/${mainCategory}/${sub.url}`} onClick={()=> setSubToggle(false)}>{sub.name}</Link></li>
+                                <li key={sub.name}><Link href={`/${mainCategory}/${sub.url}`} onClick={() => setSubToggle(false)}>{sub.name}</Link></li>
                             )}
                         </ul>
                     </section>

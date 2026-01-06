@@ -104,7 +104,11 @@ export default function Detail() {
                         <p>보행자 출입문 설치</p>
                     </div>
                 </section>
-                <div className="display-flex-flow">
+                <div>
+                    <div>
+                        <h4>쪽문 2M*1M 설치</h4>
+                        <p>현장의 작업자, 협력사, 방문 객 등이 안전하게 출입할 수 있도록 별도로 쪽문을 설치해드립니다.</p>
+                    </div>
                     <div className="display-flex">
                         <div>
                             <Image src="/images/보행자출입문_1.jpg" alt="보행자 출입문" width={1000} height={1000} />
@@ -112,10 +116,6 @@ export default function Detail() {
                         <div>
                             <Image src="/images/보행자출입문_2.jpg" alt="보행자 출입문" width={1000} height={1000} />
                         </div>
-                    </div>
-                    <div>
-                        <h4>쪽문 2M*1M 설치</h4>
-                        <p>현장의 작업자, 협력사, 방문 객 등이 안전하게 출입할 수 있도록 별도로 쪽문을 설치해드립니다.</p>
                     </div>
                 </div>
             </div>

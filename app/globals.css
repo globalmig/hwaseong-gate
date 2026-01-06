@@ -295,6 +295,10 @@ main {
     filter: invert(1);
 }
 
+.category-main>div>:last-child>section>h4 {
+    font-size: 0.8rem;
+}
+
 .category-main>div>:last-child>section>h4,
 .category-main>div>:last-child>section>div {
     margin: auto 0;
@@ -424,8 +428,12 @@ footer>div>:last-child ul li {
     .category-main>div>:last-child>section {
         padding: 20px;
         gap: 20px;
-        width: 35%;
+        width: 45%;
     }
+
+    .category-main>div>:last-child>section>h4 {
+    font-size: 1rem;
+}
 
     .category-main>div>:last-child>section>ul {
         top: 65px;

@@ -79,7 +79,7 @@ export default function Header() {
                                                         <Link href={`/${key}/${sub.url}`} onClick={() => {
                                                             setIsOpen(false); setOpenSub(null);
                                                         }
-                                                        }>- {sub.name}</Link>
+                                                        }><span className="mo">- </span>{sub.name}</Link>
                                                     </li>
                                                 ))}
                                             </ul>

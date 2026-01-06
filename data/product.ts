@@ -63,13 +63,13 @@ export const PRODUCT : DetailProps[] = [
                 id: 2,
                 name: "부천 소사 DL 건설 현장",
                 img: [
-                    "/images/부천DL_홀딩1.jpg",
+                    "/images/부천DL_홀딩.jpg",
                 ]
             }, {
                 id: 3,
                 name: "홍은동 두산건설 현장 홀딩도어",
                 img: [
-                    "/images/홍은동_두산건설_홀딩1.jpg",
+                    "/images/홍은동_두산건설_홀딩.jpg",
                 ]
             },
         ]

@@ -17,12 +17,13 @@ export default function Home() {
         <div>
           <section>
             <div className="display-flex">
-              <h3><Link href="/inquire">현장 살펴보기</Link></h3>
+              <h3><Link href="/processing/repair_insurance">수리 현장 살펴보기</Link></h3>
               <div>
                   <Image src="/icons/more_white.png" alt="바로가기" width={16} height={29} />
               </div>
             </div>
-            <p>(주)화성게이트의 기술력으로 완성된 시공 현장을 확인해보세요.</p>
+            {/* <p>(주)화성게이트의 기술력으로 완성된 시공 현장을 확인해보세요.</p> */}
+            <p>갑작스러운 홀딩도어 고장을 보험처리와 함께 해결해드립니다.</p>
           </section>
           <section>
             <div className="display-flex">

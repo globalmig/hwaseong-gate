@@ -51,9 +51,9 @@ export default function MainSlide() {
                 </div>
                 <section>
                     <h1>홀딩도어 수리 및 보험처리</h1>
-                    <p></p>
+                    <p>홀딩도어의 수리와 보험처리를 빠르고 안전하게 해드립니다.</p>
                     <button>
-                        <Link href="/business/B">자세히 보기</Link>
+                        <Link href="/processing/repair_insurance">자세히 보기</Link>
                     </button>
                 </section>
             </div>

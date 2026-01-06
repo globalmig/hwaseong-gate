@@ -69,6 +69,7 @@ export default function InquireForm() {
             return
         }
 
+        console.log(form)
         // SMS 
         try {
             const formData = new FormData();
@@ -111,7 +112,7 @@ export default function InquireForm() {
                 <div>
                     <legend><h3 className="required">연락처</h3></legend>
                     <div className="display-flex">
-                        <input type="text" inputMode="numeric" id="phoneFront" name="phoneFront" maxLength={11} onChange={onChangeForm} value={form.phone} placeholder="연락처를 입력해주세요." />
+                        <input type="text" inputMode="numeric" id="phone" name="phone" maxLength={11} onChange={onChangeForm} value={form.phone} placeholder="연락처를 입력해주세요." />
                     </div>
                 </div>
 
