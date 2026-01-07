@@ -115,9 +115,9 @@ export const PRODUCT: DetailProps[] = [
         ]
     }, {
         id: 3,
-        name: "가설 EGI휀스",
+        name: "EGI휀스",
         contents: [
-            "가설 EGI휀스는 건설 현장이나 공장, 공사 구간 등에서 임시로 설치되는 안전 및 경계용 울타리입니다.",
+            "EGI휀스는 건설 현장이나 공장, 공사 구간 등에서 임시로 설치되는 안전 및 경계용 울타리입니다.",
             "출입 관리와 안전 확보에 효과적이며, 공사장 주변의 통행자와 작업자를 보호합니다."
         ],
         size: "1M~4M",
@@ -140,7 +140,7 @@ export const PRODUCT: DetailProps[] = [
         detail: [
             {
                 id: 1,
-                name: "가설 EGI휀스 설치 작업",
+                name: "EGI휀스 설치 작업",
                 img: [
                     "/images/휀스_상세1.jpg",
                     "/images/휀스_상세2.jpg",

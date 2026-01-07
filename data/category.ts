@@ -12,7 +12,7 @@ export const CATEGORY_MAP: { [key: string]: { title: string; banner: string; cat
         categories: [
             { name: "홀딩도어", url: "A", },
             { name: "양개도어", url: "B", },
-            { name: "가설 EGI휀스", url: "C", },
+            { name: "EGI휀스", url: "C", },
         ],
     },
     processing: {

@@ -74,12 +74,12 @@ export default function Home() {
             </section>
             <section onMouseEnter={() => setIsHover("egi")} onMouseLeave={() => setIsHover(null)}>
               <div>
-                <Image className={isHover === "egi" ? "section-hover" : ""} src="/images/휀스_product.jpg" alt="가설 EGI휀스" width={383} height={383} />
+                <Image className={isHover === "egi" ? "section-hover" : ""} src="/images/휀스_product.jpg" alt="EGI휀스" width={383} height={383} />
               </div>
               <div>
                 <div>
                   <p>EGI FENCE</p>
-                  <h1>가설 EGI휀스</h1>
+                  <h1>EGI휀스</h1>
                   <p className={isHover === "egi" ? "section-hover" : ""}>건설, 공장, 공사 현장의 출입 관리와 안전을 확보할 수 있는 경계용 울타리입니다.</p>
                 </div>
                 <button>
