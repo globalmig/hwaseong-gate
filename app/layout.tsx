@@ -9,15 +9,15 @@ import Cs from "@/components/Cs";
 
 export const metadata: Metadata = {
   title: '(주)화성게이트',
-  description: '',
+  description: '공장, 상가, 창고 등 현장 구조에 맞춘 각종 철구조물을 제작 및 시공, 해체를 전문으로 하고 있습니다.',
   openGraph: {
     title: '(주)화성게이트',
-    description: '',
-    url: 'https://www..com',
+    description: '홀딩도어, 양개도어, EGI휀스 제작 및 시공, 해체 전문 업체',
+    url: 'https://www.hwasung-gate.com',
     siteName: '(주)화성게이트',
     images: [
       {
-        url: 'https://www..com/images/og_image.png',
+        url: 'https://www.hwasung-gate.com/images/og_image.jpg',
         width: 1200,
         height: 630,
         alt: '(주)화성게이트',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   other: {
-    'naver-site-verification': '',
+    'naver-site-verification': '7ecd9823a517761b72fc885441b415af9a35a319',
   }
 };
 
