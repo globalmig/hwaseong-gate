@@ -21,9 +21,9 @@ export default function Header() {
                         <div>
                             <Link href="/" className="flex-left">
                             <div>
-                                <Image src="/icons/logo.png" alt="홈으로 이동" width={1536} height={1024}/>
+                                <Image src="/icons/logo-blue.png" alt="홈으로 이동" width={1536} height={1024}/>
                             </div>
-                            <h4>(주)화성게이트</h4>
+                            <h4 className="pc">(주)화성게이트</h4>
                             </Link>
                         </div>
                         <div>

@@ -125,7 +125,7 @@ header>div>:first-child>:first-child img {
     width: 50px;
     height: auto;
     margin: auto 0;
-    filter: grayscale(1) brightness(0);
+    /* filter: grayscale(1) brightness(0); */
 }
 
 header>div>:first-child>:last-child {
