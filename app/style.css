@@ -383,85 +383,6 @@
     height: auto;
 }
 
-/* inquire */
-
-.inquire>div>:first-child {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.inquire>div>form {
-    text-align: left;
-}
-
-.inquire>div>form>div {
-    margin-bottom: 30px;
-}
-
-.inquire>div>form h3 {
-    padding: 10px;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    border-bottom: 0px;
-    color: #222;
-}
-
-.inquire>div>form input,
-.inquire>div>form textarea {
-    width: 100%;
-    padding: 15px 10px;
-    border: 1px solid #ccc
-}
-
-.inquire>div>form>div:last-of-type>:nth-child(2) {
-    padding: 15px 10px;
-    border: 1px solid #ccc;
-}
-
-.inquire>div>form>div:last-of-type>:nth-child(2) ul {
-    margin: 15px 0;
-}
-
-.inquire>div>form>div:last-of-type>:last-child {
-    margin-top: 20px;
-    justify-content: left;
-    gap: 10px;
-}
-
-.inquire>div>form>div:last-of-type>:last-child input {
-    width: 15px;
-    height: 15px;
-    margin: auto 0;
-}
-
-.inquire>div>form>div:last-of-type>:last-child label {
-    display: none;
-}
-
-.inquire>div>form>div:last-of-type>:last-child p {
-    margin: auto 0;
-}
-
-.inquire>div>form>div:last-of-type p span {
-    font-weight: bold;
-}
-
-.inquire>div>form button {
-    cursor: pointer;
-    margin-top: 30px;
-    background-color: #880000;
-    padding: 10px;
-    width: 100%;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-}
-
-.inquire>div>form button:hover {
-    background-color: #770000;
-}
-
 @media screen and (min-width: 768px) {
 
     /* main */
@@ -539,23 +460,6 @@
     .company>div>ul li {
         width: 70%;
         margin: 5px auto;
-    }
-
-    /* inquire */
-
-    .inquire>div>form input,
-    .inquire>div>form textarea {
-        font-size: 1rem;
-    }
-
-    .inquire>div>form button {
-        margin-top: 40px;
-        padding: 20px;
-        font-size: 1rem;
-    }
-
-    .inquire>div>form button:hover {
-        background-color: #770000;
     }
 
 }

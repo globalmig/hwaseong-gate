@@ -22,11 +22,4 @@ export const CATEGORY_MAP: { [key: string]: { title: string; banner: string; cat
             { name: "홀딩도어 수리·보험처리", url: "repair_insurance", },
         ],
     },
-    // inquire: {
-    //     title: '문의하기',
-    //     banner: "/images/inquire_banner.jpg",
-    //     categories: [
-    //         { name: "문의하기", url: "write", },
-    //     ],
-    // },
 };

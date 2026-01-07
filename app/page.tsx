@@ -22,17 +22,16 @@ export default function Home() {
                   <Image src="/icons/more_white.png" alt="바로가기" width={16} height={29} />
               </div>
             </div>
-            {/* <p>(주)화성게이트의 기술력으로 완성된 시공 현장을 확인해보세요.</p> */}
             <p>갑작스러운 홀딩도어 고장을 보험처리와 함께 해결해드립니다.</p>
           </section>
           <section>
             <div className="display-flex">
-              <h3><Link href="/inquire">문의하기</Link></h3>
+              <h3><Link href="/business/A">제품 살펴보기</Link></h3>
               <div>
                   <Image src="/icons/more_white.png" alt="바로가기" width={16} height={29} />
               </div>
             </div>
-            <p>제품 및 시공 관련 견적을 문의할 수 있습니다.</p>
+            <p>제품 및 시공 관련 제품을 확인해볼 수 있습니다.</p>
           </section>
         </div>
       </main>
