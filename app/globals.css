@@ -183,7 +183,7 @@ nav>ul>li>div>p {
 }
 
 nav>ul>li>div>p:hover {
-    color: #7B0202;
+    color: #234fa1;
 }
 
 nav>ul>li>div>div {
@@ -218,7 +218,7 @@ nav>ul>li>ul>li {
 }
 
 nav>ul>li>ul>li a:hover {
-    color: #7B0202;
+    color: #234fa1;
     font-weight: bold;
 }
 
@@ -271,7 +271,7 @@ main {
 
 .category-main>div>:last-child>:first-child {
     padding: 10px;
-    background-color: #7B0202;
+    background-color: #234fa1;
     cursor: pointer;
 }
 
@@ -507,13 +507,13 @@ footer>div>:last-child ul li {
     }
 
     header>div>:first-child>:nth-child(2)>div>ul li:hover {
-        border-bottom: 2px solid #7B0202;
-        color: #7B0202;
+        border-bottom: 2px solid #234fa1;
+        color: #234fa1;
     }
 
     header>div>:first-child>:nth-child(2)>div.hover>ul li.active {
-        border-bottom: 2px solid #7B0202;
-        color: #7B0202;
+        border-bottom: 2px solid #234fa1;
+        color: #234fa1;
     }
 
     header>div>:first-child>:nth-child(2)>div>div {
@@ -556,7 +556,7 @@ footer>div>:last-child ul li {
     }
 
     header>div>:first-child>:nth-child(2)>div.hover>div>div>ul li a:hover {
-        color: #7B0202;
+        color: #234fa1;
         font-weight: bold;
     }
 

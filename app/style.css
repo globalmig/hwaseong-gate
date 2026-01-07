@@ -63,11 +63,11 @@
 }
 
 .home-main>:last-child>section:first-of-type {
-    background-color: #880000;
+    background-color: #234fa1;
 }
 
 .home-main>:last-child>section:first-of-type:hover {
-    background-color: #770000;
+    background-color: #1c4288;
 }
 
 .home-main>:last-child>section:last-of-type {
@@ -219,12 +219,12 @@
 
 .business>div>div>section {
     margin-bottom: 25px;
-    border-bottom: 1px solid #880000;
+    border-bottom: 1px solid #234fa1;
 }
 
 .business>div>div>section>div {
     padding: 10px 20px;
-    background-color: #880000;
+    background-color: #234fa1;
     color: white;
     display: inline-block;
 }
@@ -272,7 +272,7 @@
 }
 
 .business>div>:first-child>div>div>:last-child ul li:first-of-type p:last-of-type {
-    color: #880000;
+    color: #234fa1;
     font-weight: bold;
 }
 
@@ -363,12 +363,12 @@
 
 .processing>div>section>:first-child {
     margin-bottom: 25px;
-    border-bottom: 1px solid #880000;
+    border-bottom: 1px solid #234fa1;
 }
 
 .processing>div>section>:first-child>div {
     padding: 10px 20px;
-    background-color: #880000;
+    background-color: #234fa1;
     color: white;
     display: inline-block;
 }
