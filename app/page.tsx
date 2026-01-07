@@ -72,18 +72,18 @@ export default function Home() {
                 </button>
               </div>
             </section>
-            <section onMouseEnter={() => setIsHover("pedestrain")} onMouseLeave={() => setIsHover(null)}>
+            <section onMouseEnter={() => setIsHover("egi")} onMouseLeave={() => setIsHover(null)}>
               <div>
-                <Image className={isHover === "pedestrain" ? "section-hover" : ""} src="/images/현장출입문_product.jpg" alt="현장 출입문" width={383} height={383} />
+                <Image className={isHover === "egi" ? "section-hover" : ""} src="/images/휀스_product.jpg" alt="가설 EGI휀스" width={383} height={383} />
               </div>
               <div>
                 <div>
-                  <p>PEDESTRAIN DOOR</p>
-                  <h1>보행자 출입문</h1>
-                  <p className={isHover === "pedestrain" ? "section-hover" : ""}>현장의 작업자, 협력사, 방문 객 등이 안전하게 출입할 수 있는 쪽문입니다.</p>
+                  <p>EGI FENCE</p>
+                  <h1>가설 EGI휀스</h1>
+                  <p className={isHover === "egi" ? "section-hover" : ""}>건설, 공장, 공사 현장의 출입 관리와 안전을 확보할 수 있는 경계용 울타리입니다.</p>
                 </div>
                 <button>
-                  <Link href="/business/A">MORE</Link>
+                  <Link href="/business/C">MORE</Link>
                 </button>
               </div>
             </section>
