@@ -23,7 +23,7 @@ export default function MainSlide() {
         <Slider ref={sliderRef} {...settings} className="main-slider">
             <div className="main-slider-item">
                 <div>
-                    <Image src="/images/banner_1.jpg" alt="배너1" width={2560} height={700} priority quality={100} />
+                    <Image src="/images/banner_1.jpg" alt="현장 구조에 맞춘 철 구조물 제작 및 설치 전문 업체" width={2560} height={700} priority quality={100} />
                 </div>
                 <section>
                     <h1>(주)화성게이트</h1>
@@ -35,7 +35,7 @@ export default function MainSlide() {
             </div>
             <div className="main-slider-item">
                 <div>
-                    <Image src="/images/banner_2.jpg" alt="배너2" width={2560} height={700} priority quality={100} />
+                    <Image src="/images/banner_2.jpg" alt="홀딩도어와 양개도어를 제작 및 설치합니다." width={2560} height={700} priority quality={100} />
                 </div>
                 <section>
                     <h1>현장출입문</h1>
@@ -47,7 +47,7 @@ export default function MainSlide() {
             </div>
             <div className="main-slider-item">
                 <div>
-                    <Image src="/images/banner_3.jpg" alt="배너3" width={2560} height={700} priority quality={100} />
+                    <Image src="/images/banner_3.jpg" alt="안전한 수리와 보험 처리" width={2560} height={700} priority quality={100} />
                 </div>
                 <section>
                     <h1>홀딩도어 수리 및 보험처리</h1>

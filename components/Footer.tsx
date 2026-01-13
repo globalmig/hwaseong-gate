@@ -15,7 +15,7 @@ export default function Footer() {
                 <div>
                     <div className="flex-left">
                         <div>
-                            <Image src="/icons/logo.png" alt="로고" width={1536} height={1024} />
+                            <Image src="/icons/logo.png" alt="홀딩도어와 양개도어, EGI 휀스 제작 및 시공 전문 화성게이트" width={1536} height={1024} />
                         </div>
                         <h2 className="pc">(주)화성게이트</h2>
                     </div>

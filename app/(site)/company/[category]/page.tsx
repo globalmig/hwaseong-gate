@@ -5,7 +5,7 @@ export default function CompanyPage() {
         <article className="company">
             <div>
                 <div>
-                    <Image src="/icons/logo.png" alt="로고" width={1536} height={1024} />
+                    <Image src="/icons/logo.png" alt="홀딩도어와 양개도어, EGI 휀스 제작 및 시공 전문 화성게이트" width={1536} height={1024} />
                 </div>
                 <h2>화성게이트</h2>
                 <h3>저희는 홀딩도어, 양개도어, 각종 철구조물의 제작·시공 및 홀딩도어 해체를 전문으로 하는 업체입니다.</h3>

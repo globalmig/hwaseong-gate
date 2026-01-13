@@ -31,7 +31,7 @@ export default function CategoryBanner() {
             <div>
 
                 <div>
-                    <Image src={category.banner} alt={`${category.title} banner`} width={2560} height={700} priority quality={100} />
+                    <Image src={category.banner} alt={`${category.title} 이미지`} width={2560} height={700} priority quality={100} />
                 </div>
 
                 <div>
@@ -41,7 +41,7 @@ export default function CategoryBanner() {
                 <div className="flex-left">
                     <div>
                         <Link href="/">
-                            <Image src="/icons/home.png" alt="홈으로 이동" width={45} height={40} />
+                            <Image src="/icons/home.png" alt="화성게이트 바로가기" width={45} height={40} />
                         </Link>
                     </div>
                     <section className="display-flex">

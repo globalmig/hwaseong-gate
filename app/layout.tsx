@@ -9,10 +9,10 @@ import Cs from "@/components/Cs";
 
 export const metadata: Metadata = {
   title: '화성게이트 | 공장·상가·창고 공사 맞춤 철 구조물 제작 및 시공',
-  description: '홀딩도어·양개도어·EGI휀스 제작 및 시공, 해제 전문, 상담 010-2395-1592',
+  description: '홀딩도어와 양개도어, EGI 휀스 제작 및 시공 전문, 상담 010-2395-1592',
   openGraph: {
     title: '화성게이트',
-    description: '홀딩도어·양개도어·EGI휀스 제작 및 시공, 해제 전문, 상담 010-2395-1592',
+    description: '홀딩도어와 양개도어, EGI 휀스 제작 및 시공 전문, 상담 010-2395-1592',
     url: 'https://www.hwasung-gate.com',
     siteName: '화성게이트',
     images: [
