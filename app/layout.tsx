@@ -8,13 +8,13 @@ import Footer from "@/components/Footer";
 import Cs from "@/components/Cs";
 
 export const metadata: Metadata = {
-  title: '(주)화성게이트',
-  description: '공장, 상가, 창고 등 현장 구조에 맞춘 각종 철구조물을 제작 및 시공, 해체를 전문으로 하고 있습니다.',
+  title: '화성게이트 | 공장·상가·창고 공사 맞춤 철 구조물 제작 및 시공',
+  description: '홀딩도어·양개도어·EGI휀스 제작 및 시공, 해제 전문, 상담 010-2395-1592',
   openGraph: {
-    title: '(주)화성게이트',
-    description: '홀딩도어, 양개도어, EGI휀스 제작 및 시공, 해체 전문 업체',
+    title: '화성게이트',
+    description: '홀딩도어·양개도어·EGI휀스 제작 및 시공, 해제 전문, 상담 010-2395-1592',
     url: 'https://www.hwasung-gate.com',
-    siteName: '(주)화성게이트',
+    siteName: '화성게이트',
     images: [
       {
         url: 'https://www.hwasung-gate.com/images/og_image.jpg',
@@ -26,9 +26,12 @@ export const metadata: Metadata = {
     locale: 'ko_KR',
     type: 'website',
   },
-  other: {
-    'naver-site-verification': '7ecd9823a517761b72fc885441b415af9a35a319',
-  }
+  verification: {
+    other: {
+      'naver-site-verification': '7ecd9823a517761b72fc885441b415af9a35a319',
+    }
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
@@ -39,10 +42,10 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <Header/>
+        <Header />
         {children}
-        <Cs/>
-        <Footer/>
+        <Cs />
+        <Footer />
       </body>
     </html>
   );
