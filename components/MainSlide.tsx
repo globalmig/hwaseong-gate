@@ -26,7 +26,7 @@ export default function MainSlide() {
                     <Image src="/images/banner_1.jpg" alt="현장 구조에 맞춘 철 구조물 제작 및 설치 전문 업체" width={2560} height={700} priority quality={100} />
                 </div>
                 <section>
-                    <h1>(주)화성게이트</h1>
+                    <h2>(주)화성게이트</h2>
                     <p>현장 구조에 맞춰 철구조물을 제작·설치하는 전문 업체입니다.</p>
                     <button>
                         <Link href="/company/about">자세히 보기</Link>
@@ -38,7 +38,7 @@ export default function MainSlide() {
                     <Image src="/images/banner_2.jpg" alt="홀딩도어와 양개도어를 제작 및 설치합니다." width={2560} height={700} priority quality={100} />
                 </div>
                 <section>
-                    <h1>현장출입문</h1>
+                    <h2>현장출입문</h2>
                     <p>현장 구조에 맞춰 홀딩도어와 양개도어, 쪽문등을 제작·설치해드립니다.</p>
                     <button>
                         <Link href="/business/A">자세히 보기</Link>
@@ -50,7 +50,7 @@ export default function MainSlide() {
                     <Image src="/images/banner_3.jpg" alt="안전한 수리와 보험 처리" width={2560} height={700} priority quality={100} />
                 </div>
                 <section>
-                    <h1>홀딩도어 수리 및 보험처리</h1>
+                    <h2>홀딩도어 수리 및 보험처리</h2>
                     <p>홀딩도어의 수리와 보험처리를 빠르고 안전하게 해드립니다.</p>
                     <button>
                         <Link href="/processing/repair_insurance">자세히 보기</Link>

@@ -49,7 +49,7 @@ export default function Home() {
               <div>
                 <div>
                   <p>HOLDING DOOR</p>
-                  <h1>홀딩도어</h1>
+                  <h2>홀딩도어</h2>
                   <p className={isHover === "holding" ? "section-hover" : ""}>대형 개구부에 적합한 접이식 구조로, 가장 대표적인 건설 현장 출입문입니다.</p>
                 </div>
                 <button>
@@ -64,7 +64,7 @@ export default function Home() {
               <div>
                 <div>
                   <p>DOUBLE DOOR</p>
-                  <h1>양개도어</h1>
+                  <h2>양개도어</h2>
                   <p className={isHover === "double" ? "section-hover" : ""}>건설 현장이나 공장, 창고 등의 출입구에 설치되는 출입문입니다.</p>
                 </div>
                 <button>
@@ -79,7 +79,7 @@ export default function Home() {
               <div>
                 <div>
                   <p>EGI FENCE</p>
-                  <h1>EGI휀스</h1>
+                  <h2>EGI휀스</h2>
                   <p className={isHover === "egi" ? "section-hover" : ""}>건설, 공장, 공사 현장의 출입 관리와 안전을 확보할 수 있는 경계용 울타리입니다.</p>
                 </div>
                 <button>

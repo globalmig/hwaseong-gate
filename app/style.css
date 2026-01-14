@@ -26,6 +26,10 @@
     width: 80%;
 }
 
+.main-slider .main-slider-item section h2 {
+    font-size: 2rem;
+}
+
 .main-slider .main-slider-item section p {
     margin: 10px 0 30px;
 }
@@ -123,6 +127,10 @@
     padding: 15px 0;
 }
 
+.home-business>div>:last-child section>:last-child>div>h2 {
+    font-size: 2rem;
+}
+
 .home-business>div>:last-child section>:last-child>div>p:first-of-type {
     opacity: 0.8;
     font-size: 0.8rem;
@@ -167,8 +175,9 @@
     color: white;
 }
 
-.cs>div>h1 {
+.cs>div>h2 {
     margin-top: 10px;
+    font-size: 2rem;
 }
 
 .cs>div>h3 {
@@ -395,7 +404,7 @@
         height: 600px;
     }
 
-    .main-slider .main-slider-item section h1 {
+    .main-slider .main-slider-item section h2 {
         font-size: 3rem;
     }
 
@@ -430,7 +439,7 @@
         font-size: 2rem;
     }
 
-    .cs>div>h1 {
+    .cs>div>h2 {
         font-size: 3rem;
     }
 
