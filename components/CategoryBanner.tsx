@@ -44,30 +44,67 @@ export default function CategoryBanner() {
                             <Image src="/icons/home.png" alt="화성게이트 바로가기" width={45} height={40} />
                         </Link>
                     </div>
-                    <section className="display-flex">
+                    
+                    <section
+                        className="display-flex"
+                        onClick={() => {
+                            setMainToggle(!mainToggle);
+                            setSubToggle(false);
+                        }}
+                        style={{ cursor: "pointer" }}
+                    >
                         <h4>{category.title}</h4>
                         <div>
-                            <Image src="/icons/arrow_down.png" alt="카테고리 선택" onClick={() => { setMainToggle(!mainToggle); setSubToggle(false) }} width={33} height={16} />
+                            <Image src="/icons/arrow_down.png" alt="카테고리 선택" width={33} height={16} />
                         </div>
+
                         <ul className={mainToggle ? "category-open" : ""}>
-                            {Object.entries(CATEGORY_MAP).map(([key, c]) =>
-                                <li key={key}><Link href={`/${key}/${c.categories[0].url}`} onClick={() => setMainToggle(false)}>{c.title}</Link></li>
-                            )}
+                            {Object.entries(CATEGORY_MAP).map(([key, c]) => (
+                                <li key={key}>
+                                    <Link
+                                        href={`/${key}/${c.categories[0].url}`}
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            setMainToggle(false);
+                                        }}
+                                    >
+                                        {c.title}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </section>
-                    <section className="display-flex">
+
+                    <section
+                        className="display-flex"
+                        onClick={() => {
+                            setSubToggle(!subToggle);
+                            setMainToggle(false);
+                        }}
+                        style={{ cursor: "pointer" }}
+                    >
                         <h4>{subcategoryName}</h4>
                         <div>
-                            <Image src="/icons/arrow_down.png" alt="카테고리 선택" onClick={() => { setSubToggle(!subToggle); setMainToggle(false); }} width={33} height={16} />
+                            <Image src="/icons/arrow_down.png" alt="카테고리 선택" width={33} height={16} />
                         </div>
+
                         <ul className={subToggle ? "category-open" : ""}>
-                            {category.categories.map(sub =>
-                                <li key={sub.name}><Link href={`/${mainCategory}/${sub.url}`} onClick={() => setSubToggle(false)}>{sub.name}</Link></li>
-                            )}
+                            {category.categories.map(sub => (
+                                <li key={sub.name}>
+                                    <Link
+                                        href={`/${mainCategory}/${sub.url}`}
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            setSubToggle(false);
+                                        }}
+                                    >
+                                        {sub.name}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </section>
                 </div>
-
             </div>
         </main>
     )

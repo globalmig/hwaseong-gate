@@ -47,42 +47,42 @@
     color: white;
 }
 
-.home-main>:last-child>section {
+.home-main>:last-child>a>section {
     padding: 20px;
     color: white;
     transition: 0.5s;
 }
 
-.home-main>:last-child>section>div>div {
+.home-main>:last-child>a>section>div>div {
     margin: auto 0;
 }
 
-.home-main>:last-child>section img {
+.home-main>:last-child>a>section img {
     width: 8px;
     height: auto;
 }
 
-.home-main>:last-child>section h3 a {
+.home-main>:last-child>a>section h3 a {
     color: white;
 }
 
-.home-main>:last-child>section:first-of-type {
+.home-main>:last-child>a:first-of-type>section {
     background-color: #234fa1;
 }
 
-.home-main>:last-child>section:first-of-type:hover {
+.home-main>:last-child>a:first-of-type>section:hover {
     background-color: #1c4288;
 }
 
-.home-main>:last-child>section:last-of-type {
+.home-main>:last-child>a:last-of-type>section {
     background-color: #233452;
 }
 
-.home-main>:last-child>section:last-of-type:hover {
+.home-main>:last-child>a:last-of-type>section:hover {
     background-color: #1b283f;
 }
 
-.home-main>:last-child>section>p {
+.home-main>:last-child>a>section>p {
     margin: 8px 0 15px;
 }
 
@@ -420,11 +420,11 @@
         display: flex;
     }
 
-    .home-main>:last-child>section {
+    .home-main>:last-child>a>section {
         width: 100%;
     }
 
-    .home-business>div>:last-child section {
+    .home-business>div>:last-child>a>section {
         width: 32%;
         margin: 10px 0;
     }
@@ -491,7 +491,11 @@
         margin: 0 auto;
     }
 
-    .home-main>:last-child>section {
+    .home-main>:last-child>a {
+        width: 100%;
+    }
+
+    .home-main>:last-child>a>section {
         padding: 50px 30px;
     }
 

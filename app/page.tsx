@@ -15,24 +15,28 @@ export default function Home() {
           <MainSlide />
         </div>
         <div>
+          <Link href="/processing/repair_insurance">
           <section>
             <div className="display-flex">
-              <h3><Link href="/processing/repair_insurance">수리 현장 살펴보기</Link></h3>
+              <h3>수리 현장 살펴보기</h3>
               <div>
                   <Image src="/icons/more_white.png" alt="홀딩도어 수리 바로가기" width={16} height={29} />
               </div>
             </div>
             <p>갑작스러운 홀딩도어 고장을 보험처리와 함께 해결해드립니다.</p>
           </section>
-          <section>
-            <div className="display-flex">
-              <h3><Link href="/business/A">제품 살펴보기</Link></h3>
-              <div>
-                  <Image src="/icons/more_white.png" alt="홀딩도어 시공 바로가기" width={16} height={29} />
+          </Link>
+          <Link href="/business/A">
+            <section>
+              <div className="display-flex">
+                <h3>제품 살펴보기</h3>
+                <div>
+                    <Image src="/icons/more_white.png" alt="홀딩도어 시공 바로가기" width={16} height={29} />
               </div>
             </div>
             <p>제품 및 시공 관련 제품을 확인해볼 수 있습니다.</p>
           </section>
+          </Link>
         </div>
       </main>
       <article className="home-business">
