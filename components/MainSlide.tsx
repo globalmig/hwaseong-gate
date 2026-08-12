@@ -26,7 +26,7 @@ export default function MainSlide() {
                     <Image src="/images/banner_1.jpg" alt="현장 구조에 맞춘 철 구조물 제작 및 설치 전문 업체" width={2560} height={700} priority quality={100} />
                 </div>
                 <section>
-                    <h2>(주)화성게이트</h2>
+                    <h2>화성게이트</h2>
                     <p>현장 구조에 맞춰 철구조물을 제작·설치하는 전문 업체입니다.</p>
                     <button>
                         <Link href="/company/about">자세히 보기</Link>

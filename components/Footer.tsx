@@ -19,19 +19,19 @@ export default function Footer() {
                             <div>
                                 <Image src="/icons/logo.png" alt="홀딩도어와 양개도어, EGI 휀스 제작 및 시공 전문 화성게이트" width={1536} height={1024} />
                             </div>
-                            <h2 className="pc">(주)화성게이트</h2>
+                            <h2 className="pc">화성게이트</h2>
                         </div>
 
                         <div>
                             <ul>
-                                <li>상호명 : (주)화성게이트</li>
+                                <li>상호명 : 화성게이트</li>
                                 <li>사업자번호 : 555-22-02330</li>
-                                <li>대표자 : 김막봉</li>
+                                <li>대표자 : 박영권</li>
                                 <li>대표번호 : 010-2395-1592</li>
                                 <li>팩스 : 0508-908-9464</li>
-                                <li>주소 : 경기도 화성시 송산면 삼존리 655-1</li>
+                                <li>주소 : 인천광역시 남동구 논고개로 123번길 45, 4층 403-p86호 (논현동)</li>
                             </ul>
-                            <p>@2026 (주)화성게이트. All rights reserved.</p>
+                            <p>@2026 화성게이트. All rights reserved.</p>
                         </div>
                     </div>
                 </div>

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         url: 'https://www.hwasung-gate.com/images/og_image.jpg',
         width: 1200,
         height: 630,
-        alt: '(주)화성게이트',
+        alt: '화성게이트',
       },
     ],
     locale: 'ko_KR',
